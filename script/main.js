@@ -15,15 +15,7 @@ select.addEventListener('change', function (){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${select.value}&appid=573c0d77ff7827b04de8ff37ae4f05bc&lang=fr`)
         .then(response => response.json())
         .then(data => {  
-            console.log(data);
-
-            
-            // THE VALLEY
-            // La situation météo à The Valley est : peu nuageux
-            // 🌡️ La température actuelle est de 26 degrés
-            // 💧 Le taux d'humidité est de 89%
-            // une icone pour dire comment il fait 
-
+            // console.log(data);
 
             resultat.innerHTML += `
             <h1>${data.name}</h1>
